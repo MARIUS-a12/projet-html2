@@ -1,0 +1,28 @@
+
+{
+    "editor.inlineSuggest.enabled": false,
+    "editor.quickSuggestions": { "other": false, "comments": false, "strings": false },
+    "editor.suggestOnTriggerCharacters": true,
+
+    "[html]": {
+        "editor.quickSuggestions": { "other": true, "comments": false, "strings": true },
+        "editor.suggestOnTriggerCharacters": true
+    },
+    "[css]": {
+        "editor.quickSuggestions": { "other": true, "comments": false, "strings": true },
+        "editor.suggestOnTriggerCharacters": true
+    },
+
+    "html.suggest.html5": true,
+    "html.autoClosingTags": true,
+    "css.completion.triggerPropertyValueCompletion": true,
+    "css.completion.completePropertyWithSemicolon": true,
+
+    "emmet.showExpandedAbbreviation": "always",
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "html": "html",
+        "css": "css"
+    },
+    "liveServer.settings.port": 5501
+}
