@@ -1,185 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav>
-           <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="a_propos.html">A propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="http://www.google.com">Visite Google</a></li>
-           </ul>
-        </nav>
-    </header>
-   <div>
-         <h2>John Doe</h2>
-        <p>Hello! I am john a student who loves learning new technologies and 
-            building wesites
-        </p>
-        <img src="isset/img/images.jpg" alt="" width="280">
-   </div>
-   <div>
-        <h2>My Hobbies</h2>
-        <ul>
-            <li>Coding</li>
-            <li>Reading</li>
-            <li>Music</li>
-            <li>Traveling</li>
-            <li>Playing Football</li>
-        </ul>
-   </div>
-   <div>
-        <h2>My Favorite Movies</h2>
-         <ol>
-                <li>Inception</li>
-                <li>Interstellar</li>
-                <li>Then Dark Knight</li>
-            </ol>
-   </div>
-        <h3>My Weekly Study Schedule</h3>
-
-    <table border="1">
-    <tr>
-        <th>Day</th>
-        <th>Morning</th>
-        <th>Afternoon</th>
-        <th>Evening</th>
-    </tr>
-
-    <tr>
-        <td>Monday</td>
-        <td>HTML</td>
-        <td>CSS</td>
-        <td>Practice</td>
-    </tr>
-
-    <tr>
-        <td>Tuesday</td>
-        <td>JavaScript</td>
-        <td>Python</td>
-        <td>Projects</td>
-    </tr>
-
-    <tr>
-        <td>Wednesday</td>
-        <td>AI</td>
-        <td>Database</td>
-        <td>Revision</td>
-    </tr>
-
-    <tr>
-        <td>Thursday</td>
-        <td>FastAPI</td>
-        <td>Project Work</td>
-        <td rowspan="2">Free Time</td>
-    </tr>
-
-    <tr>
-        <td>Friday</td>
-        <td>Testing</td>
-        <td>Deployment</td>
-    </tr>
-
-    <tr>
-        <td>Saturday</td>
-        <td colspan="3" align="center">Personal Projects</td>
-    </tr>
-
-    <tr>
-        <td>Sunday</td>
-        <td colspan="3" align="center">Rest</td>
-    </tr>
-
-</table>
-   <div> 
-        <h2>My Favorite Books</h2> 
-        <video src="isset/video/video.mp4" controls muted width="280"></video>
-   </div>
-   <div>
-    <h2>Contact Me</h2>
-    
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Découvrez le profil, les loisirs et le programme d'étude de John Doe.">
+  <title>Accueil | John Doe</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="index.html">John Doe</a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-list">
+        <li><a class="active" aria-current="page" href="index.html">Accueil</a></li>
+        <li><a href="a_propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<h3>Contact Me</h3>
+  <main class="container">
+    <section class="hero card">
+      <div class="hero-copy">
+        <p class="eyebrow">Étudiant · Curieux · Créatif</p>
+        <h1>Bonjour, je suis <span>John Doe</span></h1>
+        <p>Étudiant passionné par les nouvelles technologies, j'aime apprendre et créer des sites web utiles et bien conçus.</p>
+        <a class="button" href="a_propos.html">En savoir plus</a>
+      </div>
+      <img class="profile-image" src="isset/img/images.jpg" alt="Portrait de John Doe">
+    </section>
 
-<form>
-    <fieldset>
-        <legend>Send me a message</legend>
+    <section class="content-grid" aria-label="Mes centres d'intérêt">
+      <article class="card">
+        <p class="eyebrow">Au quotidien</p>
+        <h2>Mes loisirs</h2>
+        <ul class="pretty-list">
+          <li>Programmation</li><li>Lecture</li><li>Musique</li><li>Voyages</li><li>Football</li>
+        </ul>
+      </article>
+      <article class="card">
+        <p class="eyebrow">À voir absolument</p>
+        <h2>Mes films préférés</h2>
+        <ol class="pretty-list numbered">
+          <li>Inception</li><li>Interstellar</li><li>The Dark Knight</li>
+        </ol>
+      </article>
+    </section>
 
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname">
-        <br>
+    <section class="card schedule-section">
+      <p class="eyebrow">Organisation</p>
+      <h2>Mon programme d'étude</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Jour</th><th scope="col">Matin</th><th scope="col">Après-midi</th><th scope="col">Soir</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Lundi</th><td>HTML</td><td>CSS</td><td>Pratique</td></tr>
+            <tr><th scope="row">Mardi</th><td>JavaScript</td><td>Python</td><td>Projets</td></tr>
+            <tr><th scope="row">Mercredi</th><td>IA</td><td>Bases de données</td><td>Révisions</td></tr>
+            <tr><th scope="row">Jeudi</th><td>FastAPI</td><td>Travail de projet</td><td rowspan="2">Temps libre</td></tr>
+            <tr><th scope="row">Vendredi</th><td>Tests</td><td>Déploiement</td></tr>
+            <tr><th scope="row">Samedi</th><td colspan="3">Projets personnels</td></tr>
+            <tr><th scope="row">Dimanche</th><td colspan="3">Repos</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-        <br>
-
-        <label for="birth">Date of Birth:</label>
-        <input type="date" id="birth" name="birth">
-        <br>
-
-        Gender:
-        <input type="radio" name="gender" value="Male"> Male
-        <input type="radio" name="gender" value="Female"> Female
-        <input type="radio" name="gender" value="Other"> Other
-        <br>
-
-        Skills:
-        <input type="checkbox" name="skills" value="HTML"> HTML
-        <input type="checkbox" name="skills" value="CSS"> CSS
-        <input type="checkbox" name="skills" value="JavaScript"> JavaScript
-        <input type="checkbox" name="skills" value="Python"> Python
-        <input type="checkbox" name="skills" value="Others"> Others
-        <br>
-
-        <label for="country">Country:</label>
-        <select id="country" name="country">
-            <option value="">-- Select a country --</option>
-            <option value="cote-ivoire">Côte d'Ivoire</option>
-            <option value="senegal">Sénégal</option>
-            <option value="france">France</option>
-        </select>
-        <br>
-
-        <label for="picture">Profile Picture:</label>
-        <input type="file" id="picture" name="picture">
-        <br>
-
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message"
-                  rows="2" cols="35"></textarea>
-        <br><br>
-
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-
-    </fieldset>
-</form>
-
-<p><a href="about.html">Go to About Page</a></p>
-
-<footer>
-    &copy; 2026 John Doe. All rights reserved.
-</footer>
-
-</body>
-</html>
-
-   </div>
+    <section class="card media-section">
+      <div><p class="eyebrow">Pause vidéo</p><h2>À regarder</h2><p>Une petite vidéo à découvrir.</p></div>
+      <video src="isset/video/video.mp4" controls muted preload="metadata">Votre navigateur ne prend pas en charge la lecture vidéo.</video>
+    </section>
+  </main>
+  <footer class="site-footer"><p>© 2026 John Doe · <a href="contact.html">Me contacter</a></p></footer>
 </body>
 </html>

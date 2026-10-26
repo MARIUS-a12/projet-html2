@@ -1,11 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>À propos | John Doe</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <header class="site-header">
+    <a class="brand" href="index.html">John Doe</a>
+    <nav aria-label="Navigation principale"><ul class="nav-list">
+      <li><a href="index.html">Accueil</a></li><li><a class="active" aria-current="page" href="a_propos.html">À propos</a></li><li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+  </header>
+  <main class="container page-content">
+    <section class="card">
+      <p class="eyebrow">Mon parcours</p>
+      <h1>À propos de moi</h1>
+      <p>Je m'appelle John Doe et je suis étudiant. J'aime découvrir les nouvelles technologies et transformer mes idées en projets concrets sur le web.</p>
+      <p>J'apprends actuellement le développement front-end et back-end. Mon objectif est de progresser chaque jour en pratiquant, en expérimentant et en partageant ce que je crée.</p>
+    </section>
+    <section class="content-grid">
+      <article class="card"><p class="eyebrow">Ce qui me motive</p><h2>Mes intérêts</h2><ul class="pretty-list"><li>Développement web</li><li>Technologies et innovation</li><li>Apprentissage continu</li></ul></article>
+      <article class="card"><p class="eyebrow">Prochaine étape</p><h2>Mes objectifs</h2><p>Concevoir des sites accessibles, rapides et agréables à utiliser, puis mettre mes compétences au service de projets utiles.</p></article>
+    </section>
+    <a class="button" href="contact.html">Prendre contact</a>
+  </main>
+  <footer class="site-footer"><p>© 2026 John Doe · <a href="contact.html">Me contacter</a></p></footer>
 </body>
 </html>

@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: rgba(253, 216, 222, 0.615);
+  color: #241b24;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.site-header {
+  width: 100%;
+  min-height: 80px;
+  padding: 18px 5%;
+  background-color: #fff;
+  box-shadow: 4px 1px 4px #410741;
+}
+
+.brand {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-list a {
+  color: purple;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-list li {
+  transition: transform .3s ease-out;
+}
+
+.nav-list li:hover {
+  transform: scale(1.08);
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  color: #000;
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.card {
+  margin-bottom: 22px;
+  padding: 22px;
+  background: rgba(255, 255, 255, .72);
+  border-radius: 8px;
+}
+
+h1,
+h2 {
+  margin-bottom: 14px;
+  color: #410741;
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 8px;
+  color: purple;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 28px;
+}
+
+.hero-copy {
+  max-width: 620px;
+  text-align: center;
+}
+
+.hero-copy > p:not(.eyebrow),
+.page-content p {
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.hero h1 span {
+  color: purple;
+}
+
+.profile-image {
+  display: block;
+  width: 38%;
+  max-width: 300px;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 9px 18px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background: purple;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #410741;
+}
+
+.hero-copy .button,
+.page-content > .button {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.content-grid .card {
+  margin-bottom: 0;
+}
+
+.pretty-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px 24px;
+  margin: 10px 0 0 22px;
+}
+
+.numbered {
+  display: block;
+}
+
+.schedule-section {
+  margin-top: 22px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #9c7a9c;
+  text-align: left;
+}
+
+thead {
+  color: #fff;
+  background: purple;
+}
+
+.media-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 24px;
+  margin-top: 22px;
+}
+
+.media-section video {
+  width: min(100%, 420px);
+  border-radius: 5px;
+}
+
+.page-content {
+  max-width: 850px;
+}
+
+.form-card > p:not(.eyebrow) {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+
+input:not([type="checkbox"]),
+select,
+textarea {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #9c7a9c;
+  border-radius: 4px;
+  background: #fff;
+  font: inherit;
+}
+
+fieldset {
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid #9c7a9c;
+}
+
+.choice-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 8px;
+}
+
+.choice-list label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.site-footer {
+  padding: 20px;
+  background: #fff;
+  color: #410741;
+  text-align: center;
+}
+
+.site-footer a {
+  color: purple;
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  .nav-list {
+    gap: 10px 18px;
+  }
+
+  .nav-list a {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 94%;
+    margin-top: 20px;
+  }
+
+  .hero,
+  .media-section {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    width: min(80%, 280px);
+  }
+
+  .content-grid,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pretty-list {
+    grid-template-columns: 1fr;
+  }
+}
